@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/stock-watchlist/static/css/main.964fdded.css",
+    "main.js": "/stock-watchlist/static/js/main.36dcfa30.js",
+    "index.html": "/stock-watchlist/index.html",
+    "main.964fdded.css.map": "/stock-watchlist/static/css/main.964fdded.css.map",
+    "main.36dcfa30.js.map": "/stock-watchlist/static/js/main.36dcfa30.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.36dcfa30.js"
+  ]
+}
