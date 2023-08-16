@@ -21,11 +21,21 @@ function App() {
       method: "POST",
       body: JSON.stringify({ticker}),
       headers: {
-        'Content-type': 'application/json; charset=UTF-8',
+        "Content-type": "application/json; charset=UTF-8",
       },
       mode: 'cors'
     }).then(loadData);
   }
+
+  const deleteTicker = (id) => {
+    fetch("https://qmdg53-8080.csb.app/api/tickers/" + id, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+      mode: "cors",
+    }).then(loadData);
+  };
 
   return (
     <div className="App">
@@ -34,7 +44,7 @@ function App() {
       </header>
       <main>
         <WatchlistForm addTicker={addTicker} />
-        <Watchlist tickers={watchlist} />
+        <Watchlist tickers={watchlist} deleteTicker={deleteTicker} />
       </main>
     </div>
   );
